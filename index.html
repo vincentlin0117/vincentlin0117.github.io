@@ -1,13 +1,62 @@
 <!DOCTYPE html>
 <html>
+    <head>
+        <link href="main.css" rel="stylesheet" type="text/css" />
+    </head>
     <body>
-    <h3> Hello, I am Vincent Lin </h3>
-    <p>I am currently a junior student at Tennessee Technological University majoring in Computer Science and an minor in Business.</p>
-
-    <h4>
-    Goal of Website
-    </h4>
-    <p>The goal of thise website is to give me experince in the use of html and css. 
-        While also being a place where I can showcase what I have learned through out projects I work on</p>
+        <header>
+            <nav>
+                <h style="font-size: x-large;">Vincent Lin</h>
+                <ul>  
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#description">Home</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div class="box">
+            <section id="intro">
+                <h1 >Hello, I am Vincent Lin</h1>
+                
+                <p class="itembox" >I am a junior at Tennessee Technological University majoring in Computer Science and minoring in Business.</p>
+                <div class="socials">
+                    <a href="https://github.com/vincentlin0117/" target="_blank">
+                        <img alt="GitHub" src="Images/Github.png" class="icon">
+                    </a>
+                    <a href="mailto: vincentlin0117@gmail.com" target="_blank">
+                        <img alt="email" src="Images/email.jpg" class="icon">
+                    </a>
+                </div>
+            </section>
+        </div>
+        <div class="box">
+            <section id="experince">
+                <h1> Work Experience</h3>
+            </section>
+        </div>
+        <div class="box">
+            <section id="projects">
+                <h1>Projects</h1>
+                <div class="itembox">
+                    <h3 class="itemtitle">Dashboard</h3>
+                    <img class="dashboard" src="Images/UMLDiagram.png">
+                    <img class="dashboard" src="Images/UserStory2.png">
+                    <img class="dashboard" src="Images/Screenshot_20221210_052112.png"> 
+                    <p>This project was done through the process of full stack development. First we had to create user stories about what was needed and what would be liked by the users.
+                        Then decide on functions were necessary to the program and what features would be neat to have. Next step was to create UML diagrams for classes that needs to be
+                        implemented. After the diagrams are created, the next step was to use the  process of test driven development  to create test and figure out what is the correct
+                        output. After the project was complete, the final step was to create java documentation of the functions.
+                    </p>
+                    <p>Through out the process of completing this project I learn a bit about how to use Maven and Spring-boot API. The project taught me a lot about the brainstorming and development
+                        phase of create a application. It also taught me good programing practices that I should use whether I am working on a project on my own or in a group.
+                    </p>
+                    <p>This project was written using Java, Maven, and Spring-boot.</p>
+                    <a href="https://github.com/vincentlin0117/Dashboard_Project">Link to Project on GitHub</a>
+                </div>
+            </section>
+        </div>
+        <div class="footer">
+            <p>&copy; 2022 Vincent Lin</p>
+        </div>
     </body>
 </html>
