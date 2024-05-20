@@ -1,62 +1,319 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
-        <link href="main.css" rel="stylesheet" type="text/css" />
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <title>Vincent Lin</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+        <!-- Simple line icons-->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.5.5/css/simple-line-icons.min.css" rel="stylesheet" />
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
     </head>
-    <body>
-        <header>
-            <nav>
-                <h style="font-size: x-large;">Vincent Lin</h>
-                <ul>  
-                    <li><a href="#experience">Experience</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#description">Home</a></li>
-                </ul>
-            </nav>
+    <body id="page-top">
+        <!-- Navigation-->
+        <a class="menu-toggle rounded" href="#"><i class="fas fa-bars"></i></a>
+        <nav id="sidebar-wrapper">
+            <ul class="sidebar-nav">
+                <li class="sidebar-brand"><a href="#page-top">Title page</a></li>
+                <li class="sidebar-nav-item"><a href="#page-top">Home</a></li>
+                <li class="sidebar-nav-item"><a href="#about">About</a></li>
+                <li class="sidebar-nav-item"><a href="#services">Services</a></li>
+                <li class="sidebar-nav-item"><a href="#portfolio">Portfolio</a></li>
+                <li class="sidebar-nav-item"><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <!-- Header-->
+        <header class="masthead d-flex align-items-center text-white">
+            <div class="container px-4 px-lg-5 text-center">
+                <h1 class="mb-1">Hi, I am Vincent Lin</h1>
+                <h3 class="mb-5"><em>Web and software developer</em></h3>
+                <a class="btn btn-primary btn-xl" href="#about">Find Out More</a>
+            </div>
         </header>
-        <div class="box">
-            <section id="intro">
-                <h1 >Hello, I am Vincent Lin</h1>
-                
-                <p class="itembox" >I am a junior at Tennessee Technological University majoring in Computer Science and minoring in Business.</p>
-                <div class="socials">
-                    <a href="https://github.com/vincentlin0117/" target="_blank">
-                        <img alt="GitHub" src="Images/Github.png" class="icon">
-                    </a>
-                    <a href="mailto: vincentlin0117@gmail.com" target="_blank">
-                        <img alt="email" src="Images/email.jpg" class="icon">
-                    </a>
+        <!-- About-->
+        <section class="content-section bg-light" id="about">
+            <div class="container px-4 px-lg-5 text-center">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-lg-10">
+                        <h2>About Me</h2>
+                        <p class="lead mb-5">
+                            I got my bachelor of computer science degree from Tennessee Technological University. My experience growing up working as an first generation immigrant taught me to be flexible and adaptive to the environment around me. I have seen how technology has help the people around and I want to be involved in the next generation of technologies release to make peoples lives simpler.I am a computer science major at Tennessee Technological University. My experience growing up working as an first generation immigrant taught me to be flexible and adaptive to the environment around me. I have seen how technology has help the people around and I want to be involved in the next generation of technologies release to make peoples lives simpler.
+                        </p>
+                        <a class="btn btn-dark btn-xl" href="#portfolio">See Projects I've Worked On</a>
+                    </div>
                 </div>
-            </section>
-        </div>
-        <div class="box">
-            <section id="experince">
-                <h1> Work Experience</h3>
-            </section>
-        </div>
-        <div class="box">
-            <section id="projects">
-                <h1>Projects</h1>
-                <div class="itembox">
-                    <h3 class="itemtitle">Dashboard</h3>
-                    <img class="dashboard" src="Images/UMLDiagram.png">
-                    <img class="dashboard" src="Images/UserStory2.png">
-                    <img class="dashboard" src="Images/Screenshot_20221210_052112.png"> 
-                    <p>This project was done through the process of full stack development. First we had to create user stories about what was needed and what would be liked by the users.
-                        Then decide on functions were necessary to the program and what features would be neat to have. Next step was to create UML diagrams for classes that needs to be
-                        implemented. After the diagrams are created, the next step was to use the  process of test driven development  to create test and figure out what is the correct
-                        output. After the project was complete, the final step was to create java documentation of the functions.
-                    </p>
-                    <p>Through out the process of completing this project I learn a bit about how to use Maven and Spring-boot API. The project taught me a lot about the brainstorming and development
-                        phase of create a application. It also taught me good programing practices that I should use whether I am working on a project on my own or in a group.
-                    </p>
-                    <p>This project was written using Java, Maven, and Spring-boot.</p>
-                    <a href="https://github.com/vincentlin0117/Dashboard_Project">Link to Project on GitHub</a>
+            </div>
+        </section>
+        <!-- Portfolio-->
+        <section class="content-section" style="background-image: url(assets/img/background3.jpg);" id="portfolio">
+            <div class="container px-4 px-lg-5">
+                <div class="content-section-heading text-center">
+                    <h3 class="text-secondary mb-0">Portfolio</h3>
+                    <h2 class="mb-5">Recent Projects</h2>
                 </div>
-            </section>
+                <div class="row gx-0">
+                    <div class="col-lg-6">
+                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#projectDashboard">
+                            <div class="caption">
+                                <div class="caption-content">
+                                    <div class="h2">Dashboard</div>
+                                    <p class="mb-0">A Object Oriented Program created for people of the University.</p>
+                                </div>
+                            </div>
+                            <img class="img-fluid" src="assets/img/dashboardmain.png" alt="..." />
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <a class="portfolio-item" data-bs-toggle="modal" data-bs-target="#projectGreenButton">
+                            <div class="caption">
+                                <div class="caption-content">
+                                    <div class="h2">Green Button Initiative</div>
+                                    <p class="mb-0">An angular project that fetch data from utility companys APIs and convert it into a excel, xml, json format file.</p>
+                                </div>
+                            </div>
+                            <img class="img-fluid" src="assets/img/greenbutton1.png" alt="..." />
+                        </a>
+                    </div>
+                    <div class="col-lg-6">
+                        <a class="portfolio-item" data-bs-toggle="modal" data-bs-target="#projectSimpleCoop">
+                            <div class="caption">
+                                <div class="caption-content">
+                                    <div class="h2">Simple Coop</div>
+                                    <p class="mb-0">A project to create a dashboard website for chicken coop.</p>
+                                </div>
+                            </div>
+                            <img class="img-fluid" src="assets/img/simplecoopmain.png" alt="..." />
+                        </a>
+                    </div>
+                    <div class="col-lg-6">
+                        <a class="portfolio-item" data-bs-toggle="modal" data-bs-target="#projectTodo">
+                            <div class="caption">
+                                <div class="caption-content">
+                                    <div class="h2">To Do</div>
+                                    <p class="mb-0">A project to learn how to create a to do application.</p>
+                                </div>
+                            </div>
+                            <img class="img-fluid" src="assets/img/todo1.png" alt="..." />
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Footer-->
+        <footer class="footer text-center">
+            <div class="container px-4 px-lg-5">
+                <ul class="list-inline mb-5">
+                    <li class="list-inline-item">
+                        <a class="social-link rounded-circle text-white mr-3" href="mailto: vincentlin0117@gmail.com"><i class="icon-envelope"></i></a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a class="social-link rounded-circle text-white" href="https://github.com/vincentlin0117/"><i class="icon-social-github"></i></a>
+                    </li>
+                </ul>
+                <p class="text-muted small mb-0">Copyright &copy; 2024</p>
+            </div>
+        </footer>
+        <div class="portfolio-modal modal fade" id="projectDashboard" tabindex="-1" aria-labelledby="projectDashboard" aria-hidden="true">
+            <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                    <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
+                    <div class="modal-body text-center pb-5">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    
+                                    <!-- Portfolio Modal - Title-->
+                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Dashboard</h2>
+                                    <!-- Icon Divider-->
+                                    <div class="divider-custom">
+                                        <div class="divider-custom-line"></div>
+                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                        <div class="divider-custom-line"></div>
+                                    </div>
+                                    <!-- Portfolio Modal - Image-->
+                                    <div>
+                                        <img class="mySlides1" src="assets/img/dashboard1.png" style="width:100%">
+                                        <img class="mySlides1" src="assets/img/dashboard2.png" style="width:100%">
+                                        <img class="mySlides1" src="assets/img/dashboard3.png" style="width:100%">
+                                        <img class="mySlides1" src="assets/img/dashboard4.png" style="width:100%">
+                                        
+                                        <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1, 0)">&#10094;</button>
+                                        <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1, 0)">&#10095;</button>
+                                    </div>
+                                    <!-- Portfolio Modal - Text-->
+                                    <p>This project was done through the process of full stack development. First we had to create user stories about what was needed and what would be liked by the users.
+                                        Then decide on functions were necessary to the program and what features would be neat to have. Next step was to create UML diagrams for classes that needs to be
+                                        implemented. After the diagrams are created, the next step was to use the  process of test driven development  to create test and figure out what is the correct
+                                        output. After the project was complete, the final step was to create java documentation of the functions.
+                                    </p>
+                                    <p>Through out the process of completing this project I learn a bit about how to use Maven and Spring-boot API. The project taught me a lot about the brainstorming and development
+                                        phase of create a application. It also taught me good programing practices that I should use whether I am working on a project on my own or in a group.
+                                    </p>
+                                    <p>This project was written using Java, Maven, and Spring-boot.</p>
+                                    <a href="https://github.com/vincentlin0117/Dashboard_Project">Link to Project on GitHub</a>
+                                    <br>
+                                    <button class=" mt-4 btn btn-primary" data-bs-dismiss="modal">
+                                        <i class="fas fa-xmark fa-fw"></i>
+                                        Close Window
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="footer">
-            <p>&copy; 2022 Vincent Lin</p>
+        <div class="portfolio-modal modal fade" id="projectGreenButton" tabindex="-1" aria-labelledby="projectGreenButton" aria-hidden="true">
+            <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                    <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
+                    <div class="modal-body text-center pb-5">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    
+                                    <!-- Portfolio Modal - Title-->
+                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Green Button Initiative</h2>
+                                    <!-- Icon Divider-->
+                                    <div class="divider-custom">
+                                        <div class="divider-custom-line"></div>
+                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                        <div class="divider-custom-line"></div>
+                                    </div>
+                                    <!-- Portfolio Modal - Image-->
+                                    <div>
+                                        <img class="mySlides2" src="assets/img/greenbutton1.png" style="width:100%">
+                                        <img class="mySlides2" src="assets/img/greenbutton2.png" style="width:100%">
+                                        <img class="mySlides2" src="assets/img/greenbutton3.png" style="width:100%">
+                                        
+                                        <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1, 1)">&#10094;</button>
+                                        <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1, 1)">&#10095;</button>
+                                    </div>
+                                    <!-- Portfolio Modal - Text-->
+                                    <p>This project executed following the SCRUM methodology. Initially, we engaged in comprehensive discussions with our clients to understand their identity and requirements. Subsequently, armed with this knowledge, we started creating an front-end website for client review. Bi-weekly, we organized showcases to demonstrate our advancements and request feedback for any modifications.
+                                    </p>
+                                    <p>Through out the process of completing this project I learn about how an SCRUM software developer, learned how to use Angular framework along with a few libraries, and it also help solidify my ability to work in a team environment and my ability to use git for version control.
+                                    </p>
+                                    <p>This project was written using Angular and typescript.</p>
+                                    <a href="https://github.com/ORNL-AMO/TTech-Green-Button">Link to Project on GitHub</a>
+                                    <br>
+                                    <button class=" mt-4 btn btn-primary" data-bs-dismiss="modal">
+                                        <i class="fas fa-xmark fa-fw"></i>
+                                        Close Window
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
+        <div class="portfolio-modal modal fade" id="projectSimpleCoop" tabindex="-1" aria-labelledby="projectSimpleCoop" aria-hidden="true">
+            <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                    <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
+                    <div class="modal-body text-center pb-5">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    
+                                    <!-- Portfolio Modal - Title-->
+                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Simple Coop</h2>
+                                    <!-- Icon Divider-->
+                                    <div class="divider-custom">
+                                        <div class="divider-custom-line"></div>
+                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                        <div class="divider-custom-line"></div>
+                                    </div>
+                                    <!-- Portfolio Modal - Image-->
+                                    <div>
+                                        <img class="mySlides3" src="assets/img/simplecoop1.png" style="width:100%">
+                                        <img class="mySlides3" src="assets/img/simplecoop2.png" style="width:100%">
+                                        <img class="mySlides3" src="assets/img/simplecoop3.png" style="width:100%">
+                                        <img class="mySlides3" src="assets/img/simplecoop4.png" style="width:100%">
+                                        <img class="mySlides3" src="assets/img/simplecoop5.png" style="width:100%">
+                                        <img class="mySlides3" src="assets/img/simplecoop6.png" style="width:100%">
+
+                                        <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1, 2)">&#10094;</button>
+                                        <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1, 2)">&#10095;</button>
+                                    </div>
+                                    <!-- Portfolio Modal - Text-->
+                                    <p>This project was used to teach what does being a developer look like. We had to create a website design that matches with the type of people that would use it. After we created the front end we started writing the backend code. Code that allowed us to take in user information to be verified, and code that allow users to make changes to a database.
+                                    </p>
+                                    <p>Through out the project I learned what the difference between session storage and local storage. I also learn how to use session storage to manage a persons session on a site. This project also reenforced my ability to work in a team environment and my understanding and usage of git.
+                                    </p>
+                                    <p>This project was written using html, and javascript.</p>
+                                    <a href="https://github.com/vincentlin0117/Simple-Coop">Link to Project on GitHub</a>
+                                    <br>
+                                    <button class=" mt-4 btn btn-primary" data-bs-dismiss="modal">
+                                        <i class="fas fa-xmark fa-fw"></i>
+                                        Close Window
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+            <div class="portfolio-modal modal fade" id="projectTodo" tabindex="-1" aria-labelledby="projectTodo" aria-hidden="true">
+                <div class="modal-dialog modal-xl">
+                    <div class="modal-content">
+                        <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
+                        <div class="modal-body text-center pb-5">
+                            <div class="container">
+                                <div class="row justify-content-center">
+                                    <div class="col-lg-8">
+                                        
+                                        <!-- Portfolio Modal - Title-->
+                                        <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">To Do</h2>
+                                        <!-- Icon Divider-->
+                                        <div class="divider-custom">
+                                            <div class="divider-custom-line"></div>
+                                            <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                            <div class="divider-custom-line"></div>
+                                        </div>
+                                        <!-- Portfolio Modal - Image-->
+                                        <div>
+                                            <img class="mySlides4" src="assets/img/todo1.png" style="width:100%">
+                                            <img class="mySlides4" src="assets/img/todo2.png" style="width:100%">
+                                            <img class="mySlides4" src="assets/img/todo3.png" style="width:100%">
+                                            <img class="mySlides4" src="assets/img/todo4.png" style="width:100%">
+                                            
+                                            <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1, 3)">&#10094;</button>
+                                            <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1, 3)">&#10095;</button>
+                                        </div>
+                                        <!-- Portfolio Modal - Text-->
+                                        <p>This project was to enforce my understanding of API calls and how they interact with a database. First we created a database using sqlite3 to store data. Then I use express library from nodejs to create the server that will handle the requests. After that I created a front end that will display the data. Along with features that allows you to add, update, delete data.
+                                        </p>
+                                        <p>Through out the process of completing this project I learn how to develop Restful APIS and how to use post, get, and put. The project taught me the steps needed to create a application from setting up the database to creating the API, to using the API with a website application.
+                                        </p>
+                                        <p>This project was written using html, javascript, sqlite3, and nodejs.</p>
+                                        <a href="https://github.com/vincentlin0117/Dashboard_Project">Link to Project on GitHub</a>
+                                        <br>
+                                        <button class=" mt-4 btn btn-primary" data-bs-dismiss="modal">
+                                            <i class="fas fa-xmark fa-fw"></i>
+                                            Close Window
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Scroll to Top Button-->
+        <a class="scroll-to-top rounded" href="#page-top"><i class="fas fa-angle-up"></i></a>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
     </body>
 </html>
